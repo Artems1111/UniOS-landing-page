@@ -926,6 +926,9 @@ Banner Style
   margin-right: 15px;
 }
 
+.main-banner .left-content .second-button {
+  margin-right: 15px;
+}
 
 .main-banner .left-content .white-button {
   display: inline-block;
