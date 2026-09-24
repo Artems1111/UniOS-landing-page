@@ -68,11 +68,18 @@ https://templatemo.com/tm-570-chain-app-dev
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Αρχική</a></li>
-              <li class="scroll-to-section"><a href="#services">Χαρακτηριστικά</a></li>
-              <li class="scroll-to-section"><a href="#about">Σχετικά με εμάς</a></li>
-              <li class="scroll-to-section"><a href="#faq">FAQ</a></li>
+              <li class="scroll-to-section"><a href="#top" class="active" data-i18n="home_page">Αρχική</a></li>
+              <li class="scroll-to-section"><a href="#services" data-i18n="features">Χαρακτηριστικά</a></li>
+              <li class="scroll-to-section"><a href="#about" data-i18n="about_us">Σχετικά με εμάς</a></li>
+              <li class="scroll-to-section"><a href="#faq" data-i18n="faq">FAQ</a></li>
               <li class="scroll-to-section"><a href="https://open-source-uom.github.io/UniOS-docs/" target="_blank">Docs</a></li>
+              <li class="scroll-to-section">
+                <select>
+                  <option name="el" data-i18n="greek">Greek</option>
+                  <option name="en" data-i18n="english">English</option>
+                </select>
+                
+              </li>
               <!--<li class="scroll-to-section"><a href="#contact" style="color: #141414 !important;">Fun facts!</a></li> -->
             </ul>        
             <a class='menu-trigger'>
@@ -103,11 +110,11 @@ https://templatemo.com/tm-570-chain-app-dev
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                   <div class="row">
                       <div class="col-lg-12 text-dark">
-                          <h2>Γνωρίστε το UniOS!</h2>
-                          <p class="text-dark">
-                            Προσαρμοσμένη διανομή Linux βασισμένη σε Kubuntu, σχεδιασμένη για τις ανάγκες της τριτοβάθμιας εκπαίδευσης.
+                          <h2 data-i18n="meet_unios">Γνωρίστε το UniOS!</h2>
+                          <p class="text-dark" data-i18n="description">
+                            Προσαρμοσμένη διανομή Linux βασισμένη σε Arch Linux, σχεδιασμένη για τις ανάγκες της τριτοβάθμιας εκπαίδευσης.
                           </p>
-                          <p class="text-dark">
+                          <p class="text-dark" data-i18n="description_part_2">
                             Ανεπτυγμένο από φοιτητές της κοινότητας Open Source UoM, το UniOS προσφέρει ένα ενιαίο, ασφαλές και έτοιμο προς χρήση περιβάλλον KDE Plasma, ιδανικό τόσο για πανεπιστημιακά εργαστήρια, όσο και για τον προσωπικό υπολογιστή κάθε χρήστη.
                           </p>                                                   
                       </div>
@@ -119,7 +126,7 @@ https://templatemo.com/tm-570-chain-app-dev
                               <a href="https://discord.gg/QA9AxTdppX">Discord <i class="fa-brands fa-discord"></i></a>
                           </div>
                           <div class="white-button scroll-to-section">
-                              <a href="https://drive.google.com/file/d/1xKIhVgot7agSh11pZIM-_6tyI_fbTSFX/view?usp=sharing">Donwload <i class="fa-solid fa-download"></i></a>
+                              <a href="https://drive.google.com/file/d/1xKIhVgot7agSh11pZIM-_6tyI_fbTSFX/view?usp=sharing">Download <i class="fa-solid fa-download"></i></a>
                           </div>
                       </div>
                   </div>
@@ -140,10 +147,10 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h2>Ένα λειτουργικό σύστημα φτιαγμένο για <em>κάθε Πανεπιστήμιο</em></h2>
+            <h2 data-i18n="os_build">Ένα λειτουργικό σύστημα φτιαγμένο για <em data-i18n="every_uni">κάθε Πανεπιστήμιο</em></h2>
             <h2><em>⫘⫘⫘⫘⫘⫘</em></h2>
             <!-- <img src="assets/images/heading-line-dec.png" alt="" > /-->
-              <p>Linux για φοιτητές: έτοιμο από την πρώτη εκκίνηση, με άμεση πρόσβαση σε όλα τα εργαλεία που χρειάζεται κάθε φοιτητής ανάλογα με το τμήμα του, σε κάθε υπολογιστή του πανεπιστημίου αλλά και στο προσωπικό σου laptop.</p>          
+              <p data-i18n="linux_for_students">Linux για φοιτητές: έτοιμο από την πρώτη εκκίνηση, με άμεση πρόσβαση σε όλα τα εργαλεία που χρειάζεται κάθε φοιτητής ανάλογα με το τμήμα του, σε κάθε υπολογιστή του πανεπιστημίου αλλά και στο προσωπικό σου laptop.</p>          
           </div>
         </div>
       </div>
@@ -154,7 +161,7 @@ https://templatemo.com/tm-570-chain-app-dev
           <div class="service-item third-service">
             <img src="assets/logo/uniback.png" alt="">
             <h4>UniBackpack</h4>
-            <p>Σχεδιασμένο για την εύκολη εγκατάσταση εξειδικευμένου λογισμικού ανάλογα με το πανεπιστήμιο, τη σχολή ή το τμήμα. Παρέχει άμεση πρόσβαση στα ψηφιακά εργαλεία που απαιτούνται για τις σπουδές κάθε φοιτητή.</p>
+            <p data-i18n="unibackpack_description">Σχεδιασμένο για την εύκολη εγκατάσταση εξειδικευμένου λογισμικού ανάλογα με το πανεπιστήμιο, τη σχολή ή το τμήμα. Παρέχει άμεση πρόσβαση στα ψηφιακά εργαλεία που απαιτούνται για τις σπουδές κάθε φοιτητή.</p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -162,14 +169,14 @@ https://templatemo.com/tm-570-chain-app-dev
               onclick="window.location.href='https://open-source-uom.github.io/UniMate/'">
             <img src="assets/logo/unimate.png" alt="">
             <h4>UniMate</h4>
-            <p>Ένα διαδικτυακό εργαλείο που δημιουργεί έτοιμα σενάρια εγκατάστασης για κάθε διανομή Linux. Επιτρέπει στον χρήστη να επιλέξει τις εφαρμογές που θέλει και να τις εγκαταστήσει μαζικά.</p>
+            <p data-i18n="unimate_description">Ένα διαδικτυακό εργαλείο που δημιουργεί έτοιμα σενάρια εγκατάστασης για κάθε διανομή Linux. Επιτρέπει στον χρήστη να επιλέξει τις εφαρμογές που θέλει και να τις εγκαταστήσει μαζικά.</p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="service-item third-service">
             <img src="assets/logo/icon1-05.png" alt="">
             <h4>UniDesk</h4>
-            <p>Μια βοηθητική εφαρμογή που εξασφαλίζει ένα κοινό και δοκιμασμένο περιβάλλον εργασίας σε κάθε υπολογιστή. Εκμηδενίζει ασυμβατότητες μεταξύ εργαστηρίων και προσωπικών συσκευών.
+            <p data-i18n="unidesk_description">Μια βοηθητική εφαρμογή που εξασφαλίζει ένα κοινό και δοκιμασμένο περιβάλλον εργασίας σε κάθε υπολογιστή. Εκμηδενίζει ασυμβατότητες μεταξύ εργαστηρίων και προσωπικών συσκευών.
             </p>
           </div>
         </div>
@@ -177,7 +184,7 @@ https://templatemo.com/tm-570-chain-app-dev
           <div class="service-item second-service">
             <img src="assets/logo/unios.png" alt="">
             <h4>UniOS custom PPA</h4>
-            <p> Το επίσημο αποθετήριο του λογισμικού, ανοιχτό σε προτάσεις, αναφορές σφαλμάτων και διορθώσεις από την κοινότητα. Κάθε συνεισφορά είναι πολύτιμη για την εξέλιξη του έργου.</p>
+            <p data-i18n="unios_ppa_description"> Το επίσημο αποθετήριο του λογισμικού, ανοιχτό σε προτάσεις, αναφορές σφαλμάτων και διορθώσεις από την κοινότητα. Κάθε συνεισφορά είναι πολύτιμη για την εξέλιξη του έργου.</p>
           </div>
         </div>
       </div>
@@ -189,16 +196,16 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h2>Η Ομάδα μας</h2>
+            <h2 data-i18n="team">Η Ομάδα μας</h2>
             <h2><em>⫘⫘⫘⫘⫘⫘</em></h2>
-            <p>Φτιαγμένο από φοιτητές του Πανεπιστημίου Μακεδονίας στα πλαίσια της κοινότητας Open Source UoM.</p>
+            <p data-i18n="team_description">Φτιαγμένο από φοιτητές του Πανεπιστημίου Μακεδονίας στα πλαίσια της κοινότητας Open Source UoM.</p>
 
             <div class="team-members">
               <!-- ΑΠΟΣΤΟΛΗΣ -->
               <div class="member">
                 <img src="assets/members/tolis.png" alt="Member 1">
-                <h5>Apostolos Chalis</h5>
-                <p>Main Developer</p>
+                <h5 data-i18n="tolis">Apostolos Chalis</h5>
+                <p data-i18n="main_developer">Main Developer</p>
                 <div class="social-links">
                   <a href="https://github.com/TolisSth" target="_blank"><i class="fab fa-github"></i></a>
                   <a href="https://www.linkedin.com/in/tolish/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -207,8 +214,8 @@ https://templatemo.com/tm-570-chain-app-dev
               <!-- Emanuela -->
               <div class="member">
                 <img src="assets/members/emma.jpg" alt="Member 1">
-                <h5>Emanuela Goxha</h5>
-                <p>Developer & Designer</p>
+                <h5 data-i18n="emma">Emanuela Goxha</h5>
+                <p><span data-i18n="developer_female">Developer</span> & <span data-i18n="designer">Designer</span></p>
                 <div class="social-links">
                   <a href="https://github.com/fosforizo" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
@@ -216,8 +223,8 @@ https://templatemo.com/tm-570-chain-app-dev
               <!-- Malamatenia -->
               <div class="member">
                 <img src="assets/members/malamatenia.jpg" alt="Member 1">
-                <h5>Malamatenia Soulioti</h5>
-                <p>Main Designer</p>
+                <h5 data-i18n="malamatenia">Malamatenia Soulioti</h5>
+                <p data-i18n="main_designer">Main Designer</p>
                 <div class="social-links">
                   <a href="https://malamateniasoulioti.carrd.co/" target="_blank"><i class="fa-solid fa-paintbrush"></i></a>
                 </div>
@@ -225,8 +232,8 @@ https://templatemo.com/tm-570-chain-app-dev
               <!-- ΜΙΧΑΔΑΣΗΣ -->
               <div class="member">
                 <img src="assets/members/michadasis.png" alt="Member 1">
-                <h5>Ioannis Mixadasis</h5>
-                <p>Developer</p>
+                <h5 data-i18n="mixadasis">Ioannis Mixadasis</h5>
+                <p data-i18n="developer_male">Developer</p>
                 <div class="social-links">
                   <a href="https://github.com/michadasis" target="_blank"><i class="fab fa-github"></i></a>
                   <a href="https://www.linkedin.com/in/johnmichadasis/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -235,17 +242,17 @@ https://templatemo.com/tm-570-chain-app-dev
               <!-- Alexandra -->
               <div class="member">
                 <img src="assets/members/alex.png" alt="Member 1">
-                <h5>Alexandra Iordanidou</h5>
-                <p>Community Moderator</p>
+                <h5 data-i18n="alexandra">Alexandra Iordanidou</h5>
+                <p data-i18n="community_moderator">Community Moderator</p>
                 <div class="social-links">
                   <a href="https://github.com/alexa0ndra" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
               </div>
-              <!-- Alexandra -->
+              <!-- Konstantina -->
               <div class="member">
                 <img src="assets/members/konina.jpg" alt="Member 1">
-                <h5>Konstantina Deligianni</h5>
-                <p>Developer</p>
+                <h5 data-i18n="ntina">Konstantina Deligianni</h5>
+                <p data-i18n="developer_female">Developer</p>
                 <div class="social-links">
                   <a href="https://github.com/KonstantinaDel" target="_blank"><i class="fab fa-github"></i></a>
                   <a href="https://www.linkedin.com/in/konstantina-deligianni-168b23294/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -254,14 +261,14 @@ https://templatemo.com/tm-570-chain-app-dev
               <!-- Yuki -->
               <div class="member">
                 <img src="assets/members/yuki.jpg" alt="Member 1">
-                <h5>Yuki >-<</h5>
-                <p>Quality Assurance</p>
+                <h5><span data-i18n="yuki">Yuki</span> >-<</h5>
+                <p data-i18n="quality_assurance">Quality Assurance</p>
               </div>
               <!-- Apostolidis -->
               <div class="member">
                 <img src="assets/members/apostolidis.jpeg" alt="Member 1">
-                <h5>George David Apostolidis</h5>
-                <p>Developer</p>
+                <h5 data-i18n="apostolidis">George David Apostolidis</h5>
+                <p data-i18n="developer_male">Developer</p>
                 <div class="social-links">
                   <a href="https://www.linkedin.com/in/geoapos/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
@@ -283,40 +290,40 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
           <div class="section-heading">
-            <h2>Frequently Asked <em>Questions</em></h2>
+            <h2 data-i18n="frequently_asked">Frequently Asked <em data-i18n="questions">Questions</em></h2>
             <h2><em>⫘⫘⫘⫘⫘⫘</em></h2>
-            <p>Απαντήσεις στις πιο συχνές ερωτήσεις για το UniOS.</p>
+            <p data-i18n="faq_description">Απαντήσεις στις πιο συχνές ερωτήσεις για το UniOS.</p>
           </div>
         </div>
 
       <div class="faq-container">
         <div class="faq">
-          <h3 class="faq-title">Q: Τι είναι το UniOS;</h3>
-          <p class="faq-text">A: Το UniOS είναι μια προσαρμοσμένη διανομή Linux για ελληνικά πανεπιστήμια βασισμένη στο Kubuntu, αναπτυγμένη από την Open Source UoM. Στόχος του είναι η παροχή ενός εύχρηστου περιβάλλοντος για φοιτητές, προωθώντας την νοοτροπία του ανοιχτού λογισμικού.</p>
+          <h3 class="faq-title" data-i18n="what's_unios_Q">Q: Τι είναι το UniOS;</h3>
+          <p class="faq-text" data-i18n="what's_unios_A">A: Το UniOS είναι μια προσαρμοσμένη διανομή Linux για ελληνικά πανεπιστήμια βασισμένη στο Arch Linux, αναπτυγμένη από την Open Source UoM. Στόχος του είναι η παροχή ενός εύχρηστου περιβάλλοντος για φοιτητές, προωθώντας την νοοτροπία του ανοιχτού λογισμικού.</p>
           <button class="faq-toggle">
             <i class="fas fa-chevron-down"></i>
             <i class="fas fa-times"></i>
           </button>
         </div>
         <div class="faq">
-          <h3 class="faq-title">Q: Σε ποιους υπολογιστές τρέχει το UniOS;</h3>
-          <p class="faq-text">A: Το UniOS είναι σχεδιασμένο για x86-64 υπολογιστές. Απαιτεί τουλάχιστον 2 πυρήνες CPU, 4GB RAM και 25GB αποθηκευτικό χώρο.</p>
+          <h3 class="faq-title" data-i18n="compatible_computers_Q">Q: Σε ποιους υπολογιστές τρέχει το UniOS;</h3>
+          <p class="faq-text" data-i18n="compatible_computers_A">A: Το UniOS είναι σχεδιασμένο για x86-64 υπολογιστές. Απαιτεί τουλάχιστον 2 πυρήνες CPU, 4GB RAM και 25GB αποθηκευτικό χώρο.</p>
           <button class="faq-toggle">
             <i class="fas fa-chevron-down"></i>
             <i class="fas fa-times"></i>
           </button>
         </div>
         <div class="faq">
-          <h3 class="faq-title">Q: Είναι δυνατή η συνεισφορά στο έργο του UniOS;</h3>
-          <p class="faq-text">A: Εννοείται. Το UniOS αποτελεί λογισμικό ανοιχτού κώδικα και αναπτύσσεται από την κοινότητα Open Source UoM. Η συνεισφορά γίνεται μέσω της πλατφόρμας GitHub, ενώ υπάρχει και η δυνατότητα επικοινωνίας για συμμετοχή στον επίσημο διακομιστή Discord της κοινότητας.</p>
+          <h3 class="faq-title" data-i18n="contribute_Q">Q: Είναι δυνατή η συνεισφορά στο έργο του UniOS;</h3>
+          <p class="faq-text" data-i18n="contribute_A">A: Εννοείται. Το UniOS αποτελεί λογισμικό ανοιχτού κώδικα και αναπτύσσεται από την κοινότητα Open Source UoM. Η συνεισφορά γίνεται μέσω της πλατφόρμας GitHub, ενώ υπάρχει και η δυνατότητα επικοινωνίας για συμμετοχή στον επίσημο διακομιστή Discord της κοινότητας.</p>
           <button class="faq-toggle">
             <i class="fas fa-chevron-down"></i>
             <i class="fas fa-times"></i>
           </button>
         </div>        
         <div class="faq">
-          <h3 class="faq-title">Q: Τι desktop environment χρησιμοποιεί το UniOS;</h3>
-          <p class="faq-text">A: Το UniOS χρησιμοποιεί KDE Plasma με Breeze Dark θέμα, προρυθμισμένο για ακαδημαϊκή χρήση.</p>
+          <h3 class="faq-title" data-i18n="desktop_environment_Q">Q: Τι desktop environment χρησιμοποιεί το UniOS;</h3>
+          <p class="faq-text" data-i18n="desktop_environment_A">A: Το UniOS χρησιμοποιεί KDE Plasma με Breeze Dark θέμα, προρυθμισμένο για ακαδημαϊκή χρήση.</p>
           <button class="faq-toggle">
             <i class="fas fa-chevron-down"></i>
             <i class="fas fa-times"></i>
@@ -338,7 +345,7 @@ https://templatemo.com/tm-570-chain-app-dev
             <div class="section-heading">
               <h4>Fun Fact!</h4>
               <h2><em>⫘⫘⫘⫘⫘⫘</em></h2>
-              <p>Χάλασαν τρία λάπτοπ και ένας υπολογιστής κατά την υλοποίηση του έργου.</p>
+              <p data-i18n="broken_computers">Χάλασαν τρία λάπτοπ και ένας υπολογιστής κατά την υλοποίηση του έργου.</p>
             </div>
           </div>
         </div>
@@ -354,17 +361,17 @@ https://templatemo.com/tm-570-chain-app-dev
       <div class="row contact flexbox">
         <div class="col-lg-3">
           <div class="footer-widget">
-            <h4>Επικοινωνία</h4>
+            <h4 data-i18n="contact">Επικοινωνία</h4>
             <p><a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=opensource@uom.edu.gr">opensource@uom.edu.gr</a></p>
           </div>
         </div>
         <div class="col-lg-3">
           <div class="footer-widget">
-            <h4>Σχετικά με εμάς</h4>
-              <p><a href="#">Αρχική</a></p>
-              <p><a href="#">Χαρακτηριστικά</a></p>
-              <p><a href="#">Σχετικά με εμάς</a></p>
-              <p><a href="#">FAQ</a></p>
+            <h4 data-i18n="about_us">Σχετικά με εμάς</h4>
+              <p><a href="#" data-i18n="home_page">Αρχική</a></p>
+              <p><a href="#" data-i18n="features">Χαρακτηριστικά</a></p>
+              <p><a href="#" data-i18n="about_us">Σχετικά με εμάς</a></p>
+              <p><a href="#" data-i18n="faq">FAQ</a></p>
           </div>
         </div>
         <div class="col-lg-3">
@@ -401,6 +408,8 @@ https://templatemo.com/tm-570-chain-app-dev
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/faq.js"></script>
+  <!--Translating script (i18n)-->
+  <script src="assets/js/handler.js"></script>
 
   <script>
     const toggles = document.querySelectorAll(".faq-toggle");
