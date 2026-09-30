@@ -141,6 +141,8 @@ option:hover{
   background-color: var(--dark-card) !important;
   border: 1px solid var(--dark-border) !important;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
+  height: 800px;
+  margin: 10px 5px 30px 5px;
 }
 
 .service-item:hover {
@@ -464,4 +466,222 @@ footer {
 .background-header .main-nav .nav li a.active::after {
   background-color: var(--pink) !important;
   border-color: var(--pink) !important;
+}
+
+/* ── Preloader: full dark override ── */
+.js-preloader {
+  background-color: var(--black) !important;
+}
+
+.preloader-inner {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.preloader-inner .dot {
+  background: var(--pink) !important;
+}
+
+.preloader-inner .dots span {
+  background: var(--pink) !important;
+}
+
+/* ── Mobile navbar: dark instead of white ── */
+@media (max-width: 767px) {
+  .header-area {
+    background-color: rgba(20, 20, 20, 0.98) !important;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4) !important;
+    height: auto !important;
+    min-height: 70px;
+    padding: 0 15px !important;
+  }
+
+  .header-area .main-nav .nav {
+    background-color: rgba(20, 20, 20, 0.98) !important;
+  }
+
+  .header-area .main-nav .nav li {
+    background: rgba(30, 30, 30, 0.98) !important;
+    border-bottom: 1px solid var(--dark-border) !important;
+  }
+
+  .header-area .main-nav .nav li:first-child {
+    border-top: 1px solid var(--dark-border) !important;
+  }
+
+  .header-area .main-nav .nav li a {
+    color: var(--text) !important;
+    background: transparent !important;
+    height: 50px !important;
+    line-height: 50px !important;
+  }
+
+  .header-area .main-nav .nav li a:hover,
+  .header-area.header-sticky .nav li a:hover,
+  .header-area.header-sticky .nav li a.active {
+    color: var(--pink) !important;
+    background: rgba(200, 124, 184, 0.08) !important;
+  }
+
+  /* Hamburger menu trigger — visible and styled */
+  .header-area .menu-trigger span,
+  .header-area .menu-trigger span::before,
+  .header-area .menu-trigger span::after {
+    background: var(--pink) !important;
+  }
+
+  /* ── Hero banner: reduce massive padding on mobile ── */
+  .main-banner {
+    padding: 110px 20px 60px 20px !important;
+    text-align: center !important;
+  }
+
+  .main-banner .left-content h2 {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .main-banner .left-content p {
+    font-size: 15px !important;
+    margin-bottom: 28px !important;
+  }
+
+  /* Buttons: stack vertically and center on mobile */
+  .main-banner .left-content .white-button {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 12px !important;
+  }
+
+  .main-banner .left-content .white-button.first-button,
+  .main-banner .left-content .white-button.second-button {
+    margin-right: 0 !important;
+  }
+
+  .main-banner .left-content .white-button a {
+    display: inline-block !important;
+    padding: 12px 30px !important;
+    font-size: 14px !important;
+  }
+
+  /* ── Services: remove excessive side padding on mobile ── */
+  .services .col-lg-3 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-bottom: 20px;
+  }
+
+  .service-item {
+    padding: 28px 24px !important;
+  }
+
+  /* ── Team members: 2-col grid on mobile instead of 1 ── */
+  .team-members {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+
+  .member {
+    width: auto !important;
+    margin: 0 !important;
+    padding: 16px 12px !important;
+  }
+
+  .member img {
+    width: 90px !important;
+    height: 90px !important;
+  }
+
+  .member h5 {
+    font-size: 14px !important;
+  }
+
+  .member p {
+    font-size: 13px !important;
+    margin-bottom: 10px !important;
+  }
+
+  /* ── FAQ on mobile ── */
+  .faq-container {
+    padding: 0 8px !important;
+  }
+
+  .faq {
+    padding: 16px !important;
+  }
+
+  .faq-title {
+    font-size: 15px !important;
+    padding-right: 36px;
+  }
+
+  /* ── Footer on mobile ── */
+  footer {
+    padding-top: 60px !important;
+    text-align: center !important;
+  }
+
+  .footer-widget h4 {
+    margin-top: 30px !important;
+  }
+
+  .contact.flexbox {
+    flex-direction: column !important;
+  }
+
+  /* ── Section headings: tighten spacing on mobile ── */
+  .section-heading {
+    padding: 0 10px !important;
+  }
+
+  .section-heading h2 {
+    font-size: 24px !important;
+  }
+
+  .section-heading p {
+    font-size: 15px !important;
+  }
+}
+
+/* ── Tablet (768–991px): 2-col service cards ── */
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-banner {
+    padding: 150px 40px 80px 40px !important;
+    text-align: center !important;
+  }
+
+  .main-banner .left-content h2 {
+    font-size: 40px !important;
+    line-height: 1.25 !important;
+  }
+
+  .main-banner .left-content .white-button {
+    display: inline-block !important;
+    margin-bottom: 12px !important;
+  }
+
+  .services .col-lg-3 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-bottom: 24px;
+  }
+
+  .team-members {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+
+  footer {
+    padding-top: 80px !important;
+  }
+}
+
+/* ── Very small screens (≤400px): single-col team ── */
+@media (max-width: 400px) {
+  .team-members {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 }
