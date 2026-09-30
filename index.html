@@ -74,9 +74,9 @@ https://templatemo.com/tm-570-chain-app-dev
               <li class="scroll-to-section"><a href="#faq" data-i18n="faq">FAQ</a></li>
               <li class="scroll-to-section"><a href="https://open-source-uom.github.io/UniOS-docs/" target="_blank">Docs</a></li>
               <li class="scroll-to-section">
-                <select>
-                  <option name="el" data-i18n="greek">Greek</option>
-                  <option name="en" data-i18n="english">English</option>
+                <select id="lang">
+                  <option name="el" value="el" data-i18n="greek">Ελληνικά</option>
+                  <option name="en" value="en" data-i18n="english">Αγγλικά</option>
                 </select>
                 
               </li>
@@ -464,7 +464,7 @@ https://templatemo.com/tm-570-chain-app-dev
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/faq.js"></script>
   <!--Translating script (i18n)-->
-  <script src="assets/js/handler.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
 
   <script>
     const toggles = document.querySelectorAll(".faq-toggle");

@@ -7,50 +7,78 @@ const cache = {};
 
 
 //orchestrator function
-async function init_i18n(){
-    let lang = getLanguage();
+export async function init_i18n(){
+    let lang = get_language();
 
+    select_language();
+    
+    await apply_language(lang);
+}
+
+async function apply_language(lang) {
     let dict = await read_dictionary(lang);
 
-    translating(dict);
+    if(dict!={}){
+        translating(dict);
 
-    toggleLangTag(lang);
+        toggleLangTag(lang);
+    }
+  
+}
+
+function select_language(){
+    document.querySelector("select").addEventListener("change", 
+        async function choose_language(){
+            //takes the input of the select element and returns it
+            let lang = document.querySelector("select").value;
+            localStorage.setItem("lang", lang);
+            await apply_language(lang);
+    }
+    )
 }
 
 //configure language
 
 function get_language() {
-    //gets language from browser settings
+    //gets language from local storage
     if(localStorage.getItem("lang")!=null){
-        return localStorage.getItem("lang");
+        let st_lang = localStorage.getItem("lang");
+        if(valid_language(st_lang)){
+            document.querySelector("select").value = st_lang;
+            return st_lang;
+        } 
     }
+    //gets language from browser settings
     let nav_lang = navigator.language;
     if (nav_lang != undefined){
-        return nav_lang.slice(0,2);
+        nav_lang = nav_lang.slice(0,2);
+        if (valid_language(nav_lang)){
+            localStorage.setItem("lang", nav_lang)
+            document.querySelector("select").value = nav_lang;
+            return nav_lang;
+        } 
     }
+    document.querySelector("select").value = 'en';
     return 'en';
+    
+}
+
+function valid_language(lang){
+   return (lang == "en" || lang == "el")
+    
 }
     
 
 
-function choose_language(){
-    //takes the input of the select element and returns it
-    return document.querySelector("select").value;
-}
-
-
 //fetch dictionary
 async function read_dictionary(lang){
-    if (lang==null){
-        lang = choose_language();
-    }
 
     if(lang in cache){
         return cache[lang];
     }
 
         
-    const response = await fetch(`locales/${lang}.json`);
+    const response = await fetch(`../locales/${lang}.json`);
 
      if(!response.ok){
         return {};
@@ -65,15 +93,14 @@ async function read_dictionary(lang){
 }
 
 
-
 //translating
 function translating(dict){
 
     let elements = document.querySelectorAll("[data-i18n]");
 
     for(const element of elements){
-        var key = element.dataset.i18n;
-        var text = dict[key];  
+        let key = element.dataset.i18n;
+        let text = dict[key] ?? key;  
         
         element.textContent = text;
     }
