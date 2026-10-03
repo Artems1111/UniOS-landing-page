@@ -64,7 +64,8 @@ function get_language() {
 }
 
 function valid_language(lang){
-   return (lang == "en" || lang == "el")
+    let langs = new Set(['en', 'el'])
+    return langs.has(lang);
     
 }
     
@@ -72,7 +73,7 @@ function valid_language(lang){
 
 //fetch dictionary
 async function read_dictionary(lang){
-
+     //if dict is cached
     if(lang in cache){
         return cache[lang];
     }
@@ -100,7 +101,7 @@ function translating(dict){
 
     for(const element of elements){
         let key = element.dataset.i18n;
-        let text = dict[key] ?? key;  
+        let text = dict[key] ?? element.textContent;  
         
         element.textContent = text;
     }

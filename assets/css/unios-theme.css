@@ -61,15 +61,8 @@ html {
   color: var(--pink) !important;
 }
 
-select option{
-  color:  var(--text);
-  background-color: var(--black);
-}
 
-option:hover{
-  color:  var(--pink);
-  background-color: var(--black);
-}
+
 
 /* ── Hero Banner ── */
 .main-banner {
