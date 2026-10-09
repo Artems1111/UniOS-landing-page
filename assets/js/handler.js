@@ -10,7 +10,7 @@ const cache = {};
 export async function init_i18n(){
     let lang = get_language();
 
-    select_language();
+    change_lang();
     
     await apply_language(lang);
 }
@@ -26,11 +26,18 @@ async function apply_language(lang) {
   
 }
 
-function select_language(){
-    document.querySelector("select").addEventListener("change", 
-        async function choose_language(){
-            //takes the input of the select element and returns it
-            let lang = document.querySelector("select").value;
+function change_lang(){
+    let lang_btn = document.getElementById("change_lang");
+    lang_btn.addEventListener("click", 
+        async function change(){
+            let lang;
+            if (lang_btn.textContent == "Ελληνικά"){
+                lang = 'en';
+            }
+            else{
+                lang='el';
+            }
+            
             localStorage.setItem("lang", lang);
             await apply_language(lang);
     }
@@ -44,7 +51,6 @@ function get_language() {
     if(localStorage.getItem("lang")!=null){
         let st_lang = localStorage.getItem("lang");
         if(valid_language(st_lang)){
-            document.querySelector("select").value = st_lang;
             return st_lang;
         } 
     }
@@ -54,11 +60,9 @@ function get_language() {
         nav_lang = nav_lang.slice(0,2);
         if (valid_language(nav_lang)){
             localStorage.setItem("lang", nav_lang)
-            document.querySelector("select").value = nav_lang;
             return nav_lang;
         } 
     }
-    document.querySelector("select").value = 'en';
     return 'en';
     
 }
