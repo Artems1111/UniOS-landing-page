@@ -61,7 +61,15 @@ html {
   color: var(--pink) !important;
 }
 
+#change_lang{
+  background-color: var(--black);
+  color: var(--text);
+  border: none;
+}
 
+#change_lang:hover{
+  color: var(--pink);
+}
 
 
 /* ── Hero Banner ── */
