@@ -61,6 +61,7 @@ html {
   color: var(--pink) !important;
 }
 
+/* --- CSS for button that changes the language of the site ---*/
 #change_lang{
   background-color: var(--black);
   color: var(--text);
@@ -70,7 +71,7 @@ html {
 #change_lang:hover{
   color: var(--pink);
 }
-
+/*-------------------------------------------------------------*/
 
 /* ── Hero Banner ── */
 .main-banner {
