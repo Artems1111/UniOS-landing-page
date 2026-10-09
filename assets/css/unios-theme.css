@@ -561,10 +561,13 @@ footer {
     padding-left: 20px !important;
     padding-right: 20px !important;
     margin-bottom: 20px;
+    grid-template-columns: repeat(2, 1fr) !important;
+    width: 50%;
   }
 
   .service-item {
-    padding: 28px 24px !important;
+    padding: 28px 24px 10px 24px !important;
+    height: 750px;
   }
 
   /* ── Team members: 2-col grid on mobile instead of 1 ── */
@@ -574,7 +577,7 @@ footer {
   }
 
   .member {
-    width: auto !important;
+    width: 100% !important;
     margin: 0 !important;
     padding: 16px 12px !important;
   }
