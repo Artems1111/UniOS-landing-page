@@ -52,7 +52,7 @@ function get_language() {
     if(localStorage.getItem("lang")!=null){
         let st_lang = localStorage.getItem("lang");
         if(valid_language(st_lang)){
-            //document.querySelector("select").value = st_lang;
+            
             return st_lang;
         } 
     }
