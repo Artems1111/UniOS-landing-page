@@ -61,7 +61,15 @@ html {
   color: var(--pink) !important;
 }
 
+#change_lang{
+  background-color: var(--black);
+  color: var(--text);
+  border: none;
+}
 
+#change_lang:hover{
+  color: var(--pink);
+}
 
 
 /* ── Hero Banner ── */
@@ -134,8 +142,9 @@ html {
   background-color: var(--dark-card) !important;
   border: 1px solid var(--dark-border) !important;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important;
-  height: 800px;
-  margin: 10px 5px 30px 5px;
+  height: 600px;
+  margin: 20px 2px 20px 2px;
+  padding: 10px 10px 10px 10px;
 }
 
 .service-item:hover {
