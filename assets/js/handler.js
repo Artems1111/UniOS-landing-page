@@ -31,7 +31,7 @@ function change_lang(){
     lang_btn.addEventListener("click", 
         async function change(){
             let lang;
-            if (lang_btn.textContent == "Ελληνικά"){
+            if (lang_btn.value == "el"){
                 lang = 'en';
             }
             else{
@@ -39,6 +39,7 @@ function change_lang(){
             }
             
             localStorage.setItem("lang", lang);
+            lang_btn.value = lang;
             await apply_language(lang);
     }
     )

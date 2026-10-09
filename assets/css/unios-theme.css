@@ -63,13 +63,16 @@ html {
 
 /* --- CSS for button that changes the language of the site ---*/
 #change_lang{
-  background-color: var(--black);
+  background-color: transparent;
   color: var(--text);
   border: none;
+  font-size: inherit;
+  font-family: inherit;
+  transition: all 0.3s ease !important;
 }
 
 #change_lang:hover{
-  color: var(--pink);
+  color: var(--pink) !important;
 }
 /*-------------------------------------------------------------*/
 
