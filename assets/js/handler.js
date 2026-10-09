@@ -38,7 +38,6 @@ function change_lang(){
                 lang='el';
             }
             
-           
             localStorage.setItem("lang", lang);
             await apply_language(lang);
     }
@@ -52,7 +51,6 @@ function get_language() {
     if(localStorage.getItem("lang")!=null){
         let st_lang = localStorage.getItem("lang");
         if(valid_language(st_lang)){
-            
             return st_lang;
         } 
     }
@@ -62,11 +60,9 @@ function get_language() {
         nav_lang = nav_lang.slice(0,2);
         if (valid_language(nav_lang)){
             localStorage.setItem("lang", nav_lang)
-            document.querySelector("select").value = nav_lang;
             return nav_lang;
         } 
     }
-    document.querySelector("select").value = 'en';
     return 'en';
     
 }
