@@ -61,6 +61,21 @@ html {
   color: var(--pink) !important;
 }
 
+/* --- CSS for button that changes the language of the site ---*/
+#change_lang{
+  background-color: transparent;
+  color: var(--text);
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  transition: all 0.3s ease !important;
+}
+
+#change_lang:hover{
+  color: var(--pink) !important;
+}
+/*-------------------------------------------------------------*/
+
 /* ── Hero Banner ── */
 .main-banner {
   background-image: url(../images/hero-bg.png) !important;
